@@ -1,0 +1,38 @@
+.cake-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.cake-img {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cake-img:hover {
+  transform: scale(1.05);
+}
+
+/* Blow animation */
+.blow {
+  animation: blowOut 1s forwards;
+}
+
+@keyframes blowOut {
+  0% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  100% {
+    opacity: 0.4;
+    filter: brightness(50%);
+    transform: scale(0.95);
+  }
+}

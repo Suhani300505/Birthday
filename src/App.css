@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(235, 22, 22, 0.5);
+  
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle, #ffc0cb, #ff69b4);
+  overflow: hidden;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+#confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-title {
+  font-size: 3rem;
+  color: #880e4f;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.home-button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #ec407a;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.home-button:hover {
+  background-color: #c2185b;
+}
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 192, 203, 0.8);
+  z-index: 2;
+  max-width: 90%;
+  width: 400px;
+}
+
+.heart {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px auto;
+  background-color: red;
+  position: relative;
+  transform: rotate(-45deg);
+  animation: pulse 1.5s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -40px;
+  left: 0;
+}
+
+.heart::after {
+  left: 40px;
+  top: 0;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}
+
+.wish-container {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wish-box {
+  max-width: 800px;
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(222, 98, 98, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff69b4;
+  text-align: center;
+}
+
+.Wish-button{
+  padding: 14px 30px;
+  margin: 5px;
+  font-size: 1.2rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #ff69b4;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+
