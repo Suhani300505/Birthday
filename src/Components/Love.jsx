@@ -53,6 +53,8 @@ const Love = () => {
 
   return (
     <div className="stamp-container">
+      <audio ref={audioRef} src="/last.mp3"  />
+
       {!playVideo ? (
         <>
           <h1>Sweet Memories</h1>
@@ -85,7 +87,6 @@ const Love = () => {
           </video>
         </div>
       )}
-      <audio ref={audioRef} src="../../public/last.mp3"  />
 
     </div>
   );

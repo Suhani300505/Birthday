@@ -46,7 +46,7 @@ With love, Fugga 💌`;
   return (
     <div className="wish-container">
       <Confetti width={width} height={height} />
-      <audio ref={audioRef} src="../../public/third.mp3" preload="auto" />
+      <audio ref={audioRef} src="/third.mp3" preload="auto" />
       
 
       <div className="wish-box">
